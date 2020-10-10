@@ -72,6 +72,14 @@ describe('greeter', () => {
         expect(greeter.greet(name)).toEqual(expectedResult);
       });
     });
+
+    it(`should log the greeting`, function() {
+      const name = 'Name';
+      const expectedLoggedString = 'Hello ' + name;
+      spyOn(console, 'log');
+      greeter.greet(name);
+      expect(console.log).toHaveBeenCalledWith(expectedLoggedString);
+    });
   });
 
 });
