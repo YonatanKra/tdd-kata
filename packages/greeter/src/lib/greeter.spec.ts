@@ -8,14 +8,14 @@ describe('greeter', () => {
   describe(`greet`, function() {
     it(`should prepend hello to name input`, function() {
       const greeter = new Greeter();
-      const name = 'some name';
+      const name = 'Jon Doe';
       const expectedResult = 'Hello ' + name;
-      expect(greeter.greet(name)).toEqual(expectedResult)
+      expect(greeter.greet(name)).toEqual(expectedResult);
     });
 
     it(`should trim the input`, function() {
       const greeter = new Greeter();
-      const name = 'some name';
+      const name = 'Jon Doe';
       const nameWithSpaces = `   ${name}   `;
       const expectedResult = 'Hello ' + name;
       expect(greeter.greet(nameWithSpaces)).toEqual(expectedResult)
