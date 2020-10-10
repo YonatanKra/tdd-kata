@@ -1,6 +1,6 @@
 export class Greeter {
 
   greet(name: string) {
-    return undefined;
+    return 'Hello ' + name;
   }
 }
