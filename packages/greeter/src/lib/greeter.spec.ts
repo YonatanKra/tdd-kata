@@ -34,6 +34,17 @@ describe('greeter', () => {
       const expectedResult = 'Hello ' + capitalizedName;
       expect(greeter.greet(name)).toEqual(expectedResult);
     });
+
+    it(`should return Good morning when the time is 06:00-12:00`, function() {
+      const dateService = new Date();
+      dateService.getHours = () => 7;
+      dateService.getMinutes = () => 0;
+      const greeter = new Greeter(dateService);
+      const name = 'Jon Doe';
+
+      const expectedResult = 'Good morning ' + name;
+      expect(greeter.greet(name)).toEqual(expectedResult);
+    });
   });
 
 });
