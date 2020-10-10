@@ -12,6 +12,9 @@ export class Greeter {
     if ((this.date.getHours() >= 6 && this.date.getHours() < 12) || (this.date.getHours() === 12 && this.date.getMinutes() === 0)) {
       prefix = 'Good morning ';
     }
+    if ((this.date.getHours() >= 18 && this.date.getHours() < 22) || (this.date.getHours() === 22 && this.date.getMinutes() === 0)) {
+      prefix = 'Good evening ';
+    }
     return prefix + capitalize(name.trim());
   }
 }
