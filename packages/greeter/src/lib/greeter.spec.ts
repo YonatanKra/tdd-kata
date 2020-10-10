@@ -12,6 +12,14 @@ describe('greeter', () => {
       const expectedResult = 'Hello ' + name;
       expect(greeter.greet(name)).toEqual(expectedResult)
     });
+
+    it(`should trim the input`, function() {
+      const greeter = new Greeter();
+      const name = 'some name';
+      const nameWithSpaces = `   ${name}   `;
+      const expectedResult = 'Hello ' + name;
+      expect(greeter.greet(nameWithSpaces)).toEqual(expectedResult)
+    });
   });
 
 });
