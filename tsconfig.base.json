@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tdd-kata/greeter": ["packages/greeter/src/index.ts"]
+      "@tdd-kata/greeter": ["packages/greeter/src/index.ts"],
+      "@tdd-kata/tennis-game": ["packages/tennis-game/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -21,6 +21,27 @@
           }
         }
       }
+    },
+    "tennis-game": {
+      "root": "packages/tennis-game",
+      "sourceRoot": "packages/tennis-game/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["packages/tennis-game/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "packages/tennis-game/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

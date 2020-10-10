@@ -28,6 +28,9 @@
   "projects": {
     "greeter": {
       "tags": []
+    },
+    "tennis-game": {
+      "tags": []
     }
   },
   "workspaceLayout": {
