@@ -20,6 +20,12 @@ describe('greeter', () => {
       const expectedResult = 'Hello ' + name;
       expect(greeter.greet(nameWithSpaces)).toEqual(expectedResult)
     });
+
+    it(`should throw if input is not string`, function() {
+      const greeter = new Greeter();
+      const name = {a: 1};
+      expect(() => greeter.greet(name as unknown as string)).toThrow('You must provide a string to Greeter.greet');
+    });
   });
 
 });
