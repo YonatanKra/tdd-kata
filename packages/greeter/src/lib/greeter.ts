@@ -2,19 +2,24 @@ function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+function getGreetingPrefix(date: Date) {
+  let prefix = 'Hello ';
+  if ((date.getHours() >= 6 && date.getHours() < 12) || (date.getHours() === 12 && date.getMinutes() === 0)) {
+    prefix = 'Good morning ';
+  }
+  if ((date.getHours() >= 18 && date.getHours() < 22) || (date.getHours() === 22 && date.getMinutes() === 0)) {
+    prefix = 'Good evening ';
+  }
+  return prefix;
+}
+
 export class Greeter {
   constructor(private date = new Date()) {
   }
 
   greet(name: string) {
     if (typeof name !== 'string') throw new Error('You must provide a string to Greeter.greet');
-    let prefix = 'Hello ';
-    if ((this.date.getHours() >= 6 && this.date.getHours() < 12) || (this.date.getHours() === 12 && this.date.getMinutes() === 0)) {
-      prefix = 'Good morning ';
-    }
-    if ((this.date.getHours() >= 18 && this.date.getHours() < 22) || (this.date.getHours() === 22 && this.date.getMinutes() === 0)) {
-      prefix = 'Good evening ';
-    }
+    const prefix = getGreetingPrefix(this.date);
     return prefix + capitalize(name.trim());
   }
 }
