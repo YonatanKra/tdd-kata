@@ -50,6 +50,17 @@ describe('greeter', () => {
         expect(greeter.greet(name)).toEqual(expectedResult);
       });
     });
+
+    it(`should return Good evening when the time is 18:00-22:00`, function() {
+      const hours = [18, 19, 20, 21, 22];
+      const name = 'Jon Doe';
+      const expectedResult = 'Good evening ' + name;
+
+      hours.forEach(hour => {
+        dateService.getHours = () => hour;
+        expect(greeter.greet(name)).toEqual(expectedResult);
+      });
+    });
   });
 
 });
