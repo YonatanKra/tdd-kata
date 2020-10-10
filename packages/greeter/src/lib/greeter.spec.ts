@@ -6,6 +6,15 @@ describe('greeter', () => {
   });
 
   describe(`greet`, function() {
+    let greeter: Greeter;
+    let dateService: Date;
+
+    beforeEach(function() {
+      dateService = new Date();
+      dateService.setHours(7);
+      dateService.setMinutes(0);
+      greeter = new Greeter(dateService);
+    });
     it(`should prepend hello to name input`, function() {
       const greeter = new Greeter();
       const name = 'Jon Doe';
@@ -36,14 +45,15 @@ describe('greeter', () => {
     });
 
     it(`should return Good morning when the time is 06:00-12:00`, function() {
-      const dateService = new Date();
-      dateService.getHours = () => 7;
-      dateService.getMinutes = () => 0;
-      const greeter = new Greeter(dateService);
+      const hours = [6,7,8,9,10,11,12];
       const name = 'Jon Doe';
-
       const expectedResult = 'Good morning ' + name;
-      expect(greeter.greet(name)).toEqual(expectedResult);
+
+      hours.forEach(hour => {
+        dateService.getHours = () => hour;
+        expect(greeter.greet(name)).toEqual(expectedResult);
+      })
+
     });
   });
 
