@@ -7,9 +7,13 @@ function getGreetingPrefix(date: Date) {
   if ((date.getHours() >= 6 && date.getHours() < 12) || (date.getHours() === 12 && date.getMinutes() === 0)) {
     prefix = 'Good morning ';
   }
-  if ((date.getHours() >= 18 && date.getHours() < 22) || (date.getHours() === 22 && date.getMinutes() === 0)) {
+  if ((date.getHours() >= 18 && date.getHours() <= 21)) {
     prefix = 'Good evening ';
   }
+  if ((date.getHours() >= 22 && date.getHours() <= 23) || (date.getHours() >= 0 && date.getHours() <= 5) ) {
+    prefix = 'Good night ';
+  }
+
   return prefix;
 }
 
