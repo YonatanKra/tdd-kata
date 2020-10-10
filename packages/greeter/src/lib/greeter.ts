@@ -1,6 +1,7 @@
 export class Greeter {
 
   greet(name: string) {
-    return 'Hello ' + name;
+    if (typeof name !== 'string') throw new Error('You must provide a string to Greeter.greet');
+    return 'Hello ' + name.trim();
   }
 }
