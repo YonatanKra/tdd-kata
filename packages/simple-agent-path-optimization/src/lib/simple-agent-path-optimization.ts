@@ -1,3 +1,6 @@
 export function countSimilarElements(list: any[], startingIndex: number): number {
-  return null;
+  const currentElement = list[startingIndex];
+  for (let i = startingIndex + 1; i < list.length; i++) {
+    if (list[i] !== currentElement) return i;
+  }
 }
