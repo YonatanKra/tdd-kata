@@ -8,5 +8,11 @@ describe(`simple agent path optimization`, function() {
       const startingIndex = input.length - 1;
       expect(countSimilarElements(input, startingIndex)).toEqual(null);
     });
+
+    it(`should return the index of the next different element`, function() {
+      const input = [2,1,1,1,2];
+      const startingIndex = 1;
+      expect(countSimilarElements(input, startingIndex)).toEqual(4);
+    });
   });
 });
