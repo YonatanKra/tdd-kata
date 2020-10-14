@@ -1,3 +1,7 @@
 module.exports = {
-  projects: ['<rootDir>/packages/greeter', '<rootDir>/packages/tennis-game'],
+  projects: [
+    '<rootDir>/packages/greeter',
+    '<rootDir>/packages/tennis-game',
+    '<rootDir>/packages/simple-agent-path-optimization',
+  ],
 };
