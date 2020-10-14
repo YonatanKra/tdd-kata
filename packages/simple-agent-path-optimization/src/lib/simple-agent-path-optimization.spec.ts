@@ -1,4 +1,6 @@
-import { countSimilarElements } from '@tdd-kata/simple-agent-path-optimization';
+import { countSimilarElements, optimizeAgent } from '@tdd-kata/simple-agent-path-optimization';
+
+
 
 describe(`simple agent path optimization`, function() {
 
@@ -13,6 +15,13 @@ describe(`simple agent path optimization`, function() {
       const input = [2,1,1,1,2];
       const startingIndex = 1;
       expect(countSimilarElements(input, startingIndex)).toEqual(4);
+    });
+  });
+
+  describe(`optimizeAgent`, function() {
+    it(`should return empty array if given empty array`, function() {
+      const input = [];
+      expect(optimizeAgent(input)).toStrictEqual([]);
     });
   });
 });
