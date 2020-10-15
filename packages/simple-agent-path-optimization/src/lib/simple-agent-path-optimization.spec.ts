@@ -43,5 +43,10 @@ describe(`simple agent path optimization`, function() {
       const input = ["UP", "DOWN", "LEFT", "RIGHT"];
       expect(optimizeAgent(input)).toStrictEqual([]);
     });
+
+    it(`should return an empty value when sent two non adjacent pairs of opposites`, function() {
+      const input = ["UP", "LEFT", "RIGHT", "DOWN"];
+      expect(optimizeAgent(input)).toStrictEqual([]);
+    });
   });
 });

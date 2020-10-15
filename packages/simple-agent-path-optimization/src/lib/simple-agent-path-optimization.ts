@@ -12,13 +12,22 @@ export function countSimilarElements(list: any[], startingIndex: number): number
   return null;
 }
 
-function removeOpposites(result: any[]) {
-  if (result[0] === OPPOSITES[result[1]]) result.splice(0, 2);
+function removeOpposites(result: any[], startingPosition: number): boolean {
+  if (result[startingPosition - 1] === OPPOSITES[result[startingPosition]]) {
+    result.splice(startingPosition - 1, 2);
+    return true;
+  }
+  return false;
 }
 
 export function optimizeAgent(input: any[]) {
   const result = [...input];
-  removeOpposites(result);
-  removeOpposites(result);
+  let startingPosition = 0;
+  while (startingPosition !== null) {
+    startingPosition = countSimilarElements(result, startingPosition);
+    if (startingPosition !== null) {
+      if (removeOpposites(result, startingPosition)) startingPosition-=2;
+    }
+  }
   return result;
 }
