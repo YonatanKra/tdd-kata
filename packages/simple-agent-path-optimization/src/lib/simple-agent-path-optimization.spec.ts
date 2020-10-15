@@ -33,5 +33,10 @@ describe(`simple agent path optimization`, function() {
       const input = ["UP", "DOWN"];
       expect(optimizeAgent(input)).toStrictEqual([]);
     });
+
+    it(`should return the third value when sent two opposites and a different value`, function() {
+      const input = ["UP", "DOWN", "LEFT"];
+      expect(optimizeAgent(input)).toStrictEqual(["LEFT"]);
+    });
   });
 });
