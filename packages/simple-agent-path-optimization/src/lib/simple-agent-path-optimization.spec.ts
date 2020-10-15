@@ -28,5 +28,10 @@ describe(`simple agent path optimization`, function() {
       const input = ["UP", "UP", "LEFT", "DOWN"];
       expect(optimizeAgent(input)).toStrictEqual(input);
     });
+
+    it(`should return an empty array when sent two opposites`, function() {
+      const input = ["UP", "DOWN"];
+      expect(optimizeAgent(input)).toStrictEqual([]);
+    });
   });
 });
