@@ -23,5 +23,10 @@ describe(`simple agent path optimization`, function() {
       const input = [];
       expect(optimizeAgent(input)).toStrictEqual([]);
     });
+
+    it(`should return a valid array back`, function() {
+      const input = ["UP", "UP", "LEFT", "DOWN"];
+      expect(optimizeAgent(input)).toStrictEqual(input);
+    });
   });
 });
