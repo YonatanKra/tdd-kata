@@ -12,9 +12,13 @@ export function countSimilarElements(list: any[], startingIndex: number): number
   return null;
 }
 
+function removeOpposites(result: any[]) {
+  if (result[0] === OPPOSITES[result[1]]) result.splice(0, 2);
+}
+
 export function optimizeAgent(input: any[]) {
   const result = [...input];
-  if (result[0] === OPPOSITES[result[1]]) result.splice(0, 2);
-  if (result[0] === OPPOSITES[result[1]]) result.splice(0, 2);
+  removeOpposites(result);
+  removeOpposites(result);
   return result;
 }
