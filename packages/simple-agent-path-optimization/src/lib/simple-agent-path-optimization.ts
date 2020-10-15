@@ -5,3 +5,7 @@ export function countSimilarElements(list: any[], startingIndex: number): number
   }
   return null;
 }
+
+export function optimizeAgent(input: any[]) {
+  return [];
+}
