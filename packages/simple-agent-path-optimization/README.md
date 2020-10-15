@@ -65,51 +65,12 @@ Expected output
 ["UP", "UP", "RIGHT"]
 ```
 
-### Phase 2
-Your agent has advanced to version 2.0 and can now support the "DROP" and "PICK" commands
+### Bonus Question:
+Make this test pass:
 
-Your agent can start its path either "FULL" or "EMPTY".
-
-Your job is to write an algorithm that makes sure the path is both optimized as above as well as feasible.
-
-Feasible = `Your agent doesn't get to PICK in a FULL state or to DROP when it is EMPTY`;
-
-If a path is not feasible, there's no need to calculate optimization.
-
-Improve your algorithm from phase 1 so it will cope with the upgrade.
-
-Your input will be `(packState: 'FULL' | 'EMPTY', directions: DIRECTION_STRINGS[])`
-
-Examples:
-
-#### feasible and optimized input
-Input:
+```javascript
+it(`should avoid circles`, function() {
+  const input = ["UP", "RIGHT", "DOWN", "LEFT"];
+  expect(optimizeAgent(input)).toStrictEqual([]);
+});
 ```
-"EMPTY"
-["UP", "UP", "LEFT", "PICK", "UP", "RIGHT", "DOWN"]
-``` 
-Expected Output:
-```
-["UP", "UP", "LEFT", "PICK", "UP", "RIGHT", "DOWN"]
-``` 
-#### not feasible
-Input:
-```
-"FULL"
-["UP", "UP", "LEFT", "PICK", "UP", "RIGHT", "DOWN"]
-``` 
-Expected Output:
-```
-"Not Feasible"
-```
-#### feasible but not optimized
-Input:
-```
-"FULL"
-["UP", "UP", "DROP", "LEFT", "UP", "RIGHT", "DOWN"]
-``` 
-Expected Output:
-```
-["UP", "UP", "DROP"]
-```
-
