@@ -15,5 +15,6 @@ export function countSimilarElements(list: any[], startingIndex: number): number
 export function optimizeAgent(input: any[]) {
   const result = [...input];
   if (result[0] === OPPOSITES[result[1]]) result.splice(0, 2);
+  if (result[0] === OPPOSITES[result[1]]) result.splice(0, 2);
   return result;
 }
