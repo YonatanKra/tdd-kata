@@ -48,5 +48,10 @@ describe(`simple agent path optimization`, function() {
       const input = ["UP", "LEFT", "RIGHT", "DOWN"];
       expect(optimizeAgent(input)).toStrictEqual([]);
     });
+
+    it(`should return the right output`, function() {
+      const input = ["UP", "UP", "RIGHT", "DOWN", "LEFT", "RIGHT", "UP"];
+      expect(optimizeAgent(input)).toStrictEqual(["UP", "UP", "RIGHT"]);
+    });
   });
 });
