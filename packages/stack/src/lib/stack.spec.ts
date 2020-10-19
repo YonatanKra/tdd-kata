@@ -15,4 +15,11 @@ describe(`stack`, function() {
     myStack.push(1);
     expect(myStack.isEmpty()).toEqual(false);
   });
+
+  it(`should be empty after one push and one pop`, function() {
+    const myStack = new Stack();
+    myStack.push(1);
+    myStack.pop();
+    expect(myStack.isEmpty()).toEqual(true);
+  });
 });

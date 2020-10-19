@@ -9,4 +9,8 @@ export class Stack {
   push(number: number) {
     this.stackEmpty = false;
   }
+
+  pop() {
+    this.stackEmpty = true;
+  }
 }
