@@ -22,4 +22,12 @@ describe(`stack`, function() {
     myStack.pop();
     expect(myStack.isEmpty()).toEqual(true);
   });
+
+  it(`should not be empty after two pushes and one pop`, function() {
+    const myStack = new Stack();
+    myStack.push(1);
+    myStack.push(2);
+    myStack.pop();
+    expect(myStack.isEmpty()).toEqual(false);
+  });
 });

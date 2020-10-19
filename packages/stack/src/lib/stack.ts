@@ -1,16 +1,16 @@
 export class Stack {
 
-  stackEmpty = true;
+  stackLength = 0;
 
   isEmpty() {
-    return this.stackEmpty;
+    return !this.stackLength;
   }
 
   push(number: number) {
-    this.stackEmpty = false;
+    this.stackLength += 1;
   }
 
   pop() {
-    this.stackEmpty = true;
+    this.stackLength -= 1;
   }
 }
