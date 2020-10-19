@@ -12,5 +12,6 @@ export class Stack {
 
   pop() {
     this.stackLength -= 1;
+    return 2;
   }
 }

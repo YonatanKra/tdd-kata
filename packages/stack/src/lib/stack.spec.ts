@@ -32,4 +32,9 @@ describe(`stack`, function() {
     myStack.pop();
     expect(myStack.isEmpty()).toEqual(false);
   });
+
+  it(`should pop the pushed value`, function() {
+    myStack.push(2);
+    expect(myStack.pop()).toEqual(2);
+  });
 });
