@@ -29,4 +29,10 @@ describe(`calcStats`, function() {
     const { sequenceLength } = calcStats(input);
     expect(sequenceLength).toEqual( 5);
   });
+
+  it(`should return the average of the sequence`, function() {
+    const input = [5, 1, 6, 7, -3];
+    const { average } = calcStats(input);
+    expect(average).toEqual( 3.2);
+  });
 });
