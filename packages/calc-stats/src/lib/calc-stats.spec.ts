@@ -6,5 +6,10 @@ describe(`calcStats`, function() {
       const input = [];
       expect(() => minimumValue(input)).toThrow('Array cannot be empty.');
     });
+
+    it(`should throw an error if sequence is not an array`, function() {
+      const input = {};
+      expect(() => minimumValue(input as [])).toThrow('sequence must be an array');
+    });
   });
 });
