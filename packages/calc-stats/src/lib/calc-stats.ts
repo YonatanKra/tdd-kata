@@ -7,7 +7,8 @@ export function calcStats(sequence: number[]) {
   if (sequence.length === 0) throwError('Array cannot be empty.');
 
   return {
-    minimumValue: sequence.reduce((currMin, nextVal) => currMin < nextVal ? currMin : nextVal, Infinity)
+    minimumValue: sequence.reduce((currMin, nextVal) => currMin < nextVal ? currMin : nextVal, Infinity),
+    maximumValue: sequence.reduce((currMin, nextVal) => currMin > nextVal ? currMin : nextVal, -Infinity),
   };
 
 }
