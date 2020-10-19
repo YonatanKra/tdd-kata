@@ -23,4 +23,10 @@ describe(`calcStats`, function() {
     const { maximumValue } = calcStats(input);
     expect(maximumValue).toEqual( 7);
   });
+
+  it(`should return the number of values in the sequence`, function() {
+    const input = [5, 1, 6, 7, -3];
+    const { sequenceLength } = calcStats(input);
+    expect(sequenceLength).toEqual( 5);
+  });
 });

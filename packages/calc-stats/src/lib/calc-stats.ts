@@ -9,6 +9,7 @@ export function calcStats(sequence: number[]) {
   return {
     minimumValue: sequence.reduce((currMin, nextVal) => currMin < nextVal ? currMin : nextVal, Infinity),
     maximumValue: sequence.reduce((currMin, nextVal) => currMin > nextVal ? currMin : nextVal, -Infinity),
+    sequenceLength: sequence.length,
   };
 
 }
