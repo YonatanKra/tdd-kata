@@ -4,5 +4,6 @@ module.exports = {
     '<rootDir>/packages/tennis-game',
     '<rootDir>/packages/simple-agent-path-optimization',
     '<rootDir>/packages/calc-stats',
+    '<rootDir>/packages/stack',
   ],
 };

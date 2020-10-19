@@ -21,7 +21,8 @@
       "@tdd-kata/simple-agent-path-optimization": [
         "packages/simple-agent-path-optimization/src/index.ts"
       ],
-      "@tdd-kata/calc-stats": ["packages/calc-stats/src/index.ts"]
+      "@tdd-kata/calc-stats": ["packages/calc-stats/src/index.ts"],
+      "@tdd-kata/stack": ["packages/stack/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

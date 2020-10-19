@@ -37,6 +37,9 @@
     },
     "calc-stats": {
       "tags": []
+    },
+    "stack": {
+      "tags": []
     }
   },
   "workspaceLayout": {
