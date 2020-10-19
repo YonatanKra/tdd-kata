@@ -1,3 +1,5 @@
+import { minimumValue } from './calc-stats';
+
 describe(`calcStats`, function() {
   describe(`minimumValue`, function() {
     it(`should throw error if array is empty`, function() {
