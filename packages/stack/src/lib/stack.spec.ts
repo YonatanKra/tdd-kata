@@ -37,4 +37,10 @@ describe(`stack`, function() {
     myStack.push(2);
     expect(myStack.pop()).toEqual(2);
   });
+
+  it(`should pop the last pushed value`, function() {
+    myStack.push(2);
+    myStack.push(22);
+    expect(myStack.pop()).toEqual(22);
+  });
 });
