@@ -43,4 +43,8 @@ describe(`stack`, function() {
     myStack.push(22);
     expect(myStack.pop()).toEqual(22);
   });
+
+  it(`should throw if popped an empty stack`, function() {
+    expect(() => myStack.pop()).toThrow('Stack is empty');
+  });
 });

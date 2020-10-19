@@ -13,6 +13,7 @@ export class Stack {
   }
 
   pop() {
+    if (this.isEmpty()) throw('Stack is empty');
     this.stackLength -= 1;
     return this.values[this.stackLength]
   }
