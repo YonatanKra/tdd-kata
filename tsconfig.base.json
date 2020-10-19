@@ -20,7 +20,8 @@
       "@tdd-kata/tennis-game": ["packages/tennis-game/src/index.ts"],
       "@tdd-kata/simple-agent-path-optimization": [
         "packages/simple-agent-path-optimization/src/index.ts"
-      ]
+      ],
+      "@tdd-kata/calc-stats": ["packages/calc-stats/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

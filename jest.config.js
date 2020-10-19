@@ -3,5 +3,6 @@ module.exports = {
     '<rootDir>/packages/greeter',
     '<rootDir>/packages/tennis-game',
     '<rootDir>/packages/simple-agent-path-optimization',
+    '<rootDir>/packages/calc-stats',
   ],
 };
