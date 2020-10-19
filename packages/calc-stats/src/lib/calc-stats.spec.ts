@@ -11,5 +11,10 @@ describe(`calcStats`, function() {
       const input = {};
       expect(() => minimumValue(input as [])).toThrow('sequence must be an array');
     });
+
+    it(`should return the minimal value`, function() {
+      const input = [5, 1, 6, 7, -3];
+      expect(minimumValue(input)).toEqual(-3);
+    });
   });
 });
