@@ -12,12 +12,15 @@ describe(`calcStats`, function() {
     expect(() => calcStats(input as [])).toThrow('sequence must be an array');
   });
 
-  describe(`Minimum Value`, function() {
-    it(`should return the minimal value`, function() {
-      const input = [5, 1, 6, 7, -3];
-      expect(calcStats(input)).toEqual({
-        minimumValue: -3
-      });
-    });
+  it(`should return the minimal value`, function() {
+    const input = [5, 1, 6, 7, -3];
+    const { minimumValue } = calcStats(input);
+    expect(minimumValue).toEqual( -3);
+  });
+
+  it(`should return the maximum value`, function() {
+    const input = [5, 1, 6, 7, -3];
+    const { maximumValue } = calcStats(input);
+    expect(maximumValue).toEqual( 7);
   });
 });
