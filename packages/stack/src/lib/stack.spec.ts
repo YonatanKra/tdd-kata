@@ -9,4 +9,10 @@ describe(`stack`, function() {
     const myStack = new Stack();
     expect(myStack.isEmpty()).toEqual(true);
   });
+
+  it(`should not be empty after push`, function() {
+    const myStack = new Stack();
+    myStack.push(1);
+    expect(myStack.isEmpty()).toEqual(false);
+  });
 });

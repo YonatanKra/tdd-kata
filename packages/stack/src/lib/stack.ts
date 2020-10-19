@@ -1,6 +1,12 @@
 export class Stack {
 
+  stackEmpty = true;
+
   isEmpty() {
-    return true;
+    return this.stackEmpty;
+  }
+
+  push(number: number) {
+    this.stackEmpty = false;
   }
 }
