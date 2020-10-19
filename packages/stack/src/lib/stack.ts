@@ -8,13 +8,11 @@ export class Stack {
   }
 
   push(number: number) {
-    this.values[this.stackLength] = number;
-    this.stackLength += 1;
+    this.values[this.stackLength++] = number;
   }
 
   pop() {
     if (this.isEmpty()) throw('Stack is empty');
-    this.stackLength -= 1;
-    return this.values[this.stackLength]
+    return this.values[--this.stackLength];
   }
 }
