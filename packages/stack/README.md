@@ -4,7 +4,10 @@ In this Kata you will create a stack.
 
 ## Running unit tests
 
-Run `cd packages/stack && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
+- Run once: `npx nx test stack`
+- Watch mode: `npx nx test-watch stack`
+
+Execute the unit tests via [Vitest](https://vitest.dev).
 
 ## The Three Rules of TDD
 

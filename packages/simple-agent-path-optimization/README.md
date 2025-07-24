@@ -16,7 +16,10 @@ Which means the workflow is:
 
 ## Running unit tests
 
-Run `cd packages/simple-agent-path-optimization && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
+- Run once: `npx nx test simple-agent-path-optimization`
+- Watch mode: `npx nx test-watch simple-agent-path-optimization`
+
+Execute the unit tests via [Vitest](https://vitest.dev).
 
 ## Before you start:
 * Try not to read ahead. 

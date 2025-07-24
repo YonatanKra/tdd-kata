@@ -19,6 +19,13 @@
             "command": "npx vitest run",
             "cwd": "packages/greeter"
           }
+        },
+        "test-watch": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx vitest",
+            "cwd": "packages/greeter"
+          }
         }
       }
     },
@@ -38,6 +45,13 @@
           "builder": "@nrwl/workspace:run-commands",
           "options": {
             "command": "npx vitest run",
+            "cwd": "packages/tennis-game"
+          }
+        },
+        "test-watch": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx vitest",
             "cwd": "packages/tennis-game"
           }
         }
@@ -63,6 +77,13 @@
             "command": "npx vitest run",
             "cwd": "packages/simple-agent-path-optimization"
           }
+        },
+        "test-watch": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx vitest",
+            "cwd": "packages/simple-agent-path-optimization"
+          }
         }
       }
     },
@@ -84,6 +105,13 @@
             "command": "npx vitest run",
             "cwd": "packages/calc-stats"
           }
+        },
+        "test-watch": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx vitest",
+            "cwd": "packages/calc-stats"
+          }
         }
       }
     },
@@ -103,6 +131,13 @@
           "builder": "@nrwl/workspace:run-commands",
           "options": {
             "command": "npx vitest run",
+            "cwd": "packages/stack"
+          }
+        },
+        "test-watch": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx vitest",
             "cwd": "packages/stack"
           }
         }

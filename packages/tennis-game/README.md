@@ -16,7 +16,10 @@ Which means the workflow is:
 
 ## Running unit tests
 
-Run `cd packages/tennis-game && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
+- Run once: `npx nx test tennis-game`
+- Watch mode: `npx nx test-watch tennis-game`
+
+Execute the unit tests via [Vitest](https://vitest.dev).
 
 ## Before you start:
 * Try not to read ahead. 

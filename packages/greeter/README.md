@@ -16,7 +16,10 @@ Which means the workflow is:
 
 ## Running unit tests
 
-Run `cd packages/greeter && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
+- Run once: `npx nx test greeter`
+- Watch mode: `npx nx test-watch greeter`
+
+Execute the unit tests via [Vitest](https://vitest.dev).
 
 ## Before you start:
 * Try not to read ahead. 

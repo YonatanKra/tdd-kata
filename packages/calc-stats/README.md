@@ -4,7 +4,10 @@ In this kata we will implement various statistics measures on an array of number
 
 ## Running unit tests
 
-Run `cd packages/calc-stats && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
+- Run once: `npx nx test calc-stats`
+- Watch mode: `npx nx test-watch calc-stats`
+
+Execute the unit tests via [Vitest](https://vitest.dev).
 
 ## The Three Rules of TDD
 
