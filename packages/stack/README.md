@@ -4,7 +4,7 @@ In this Kata you will create a stack.
 
 ## Running unit tests
 
-Run `yarn nx test stack --watch` to execute the unit tests via [Jest](https://jestjs.io).
+Run `cd packages/stack && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
 
 ## The Three Rules of TDD
 

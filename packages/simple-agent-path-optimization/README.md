@@ -16,7 +16,7 @@ Which means the workflow is:
 
 ## Running unit tests
 
-Run `nx test simple-agent-path-optimization -- watch` to execute the unit tests via [Jest](https://jestjs.io).
+Run `cd packages/simple-agent-path-optimization && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
 
 ## Before you start:
 * Try not to read ahead. 

@@ -16,7 +16,7 @@ Which means the workflow is:
 
 ## Running unit tests
 
-Run `yarn nx test greeter --watch` to execute the unit tests via [Jest](https://jestjs.io).
+Run `cd packages/greeter && npx vitest` to execute the unit tests via [Vitest](https://vitest.dev).
 
 ## Before you start:
 * Try not to read ahead. 
