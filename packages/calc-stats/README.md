@@ -4,7 +4,7 @@ In this kata we will implement various statistics measures on an array of number
 
 ## Running unit tests
 
-Run `nx test calc-stats --watch` to execute the unit tests via [Jest](https://jestjs.io).
+Run `nx test calc-stats --watch` to execute the unit tests via [Vitest](https://vitest.dev).
 
 ## The Three Rules of TDD
 

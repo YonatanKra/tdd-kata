@@ -14,10 +14,10 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@nrwl/workspace:run-commands",
           "options": {
-            "jestConfig": "packages/greeter/jest.config.js",
-            "passWithNoTests": true
+            "command": "npx vitest run",
+            "cwd": "packages/greeter"
           }
         }
       }
@@ -35,10 +35,10 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@nrwl/workspace:run-commands",
           "options": {
-            "jestConfig": "packages/tennis-game/jest.config.js",
-            "passWithNoTests": true
+            "command": "npx vitest run",
+            "cwd": "packages/tennis-game"
           }
         }
       }
@@ -58,10 +58,10 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@nrwl/workspace:run-commands",
           "options": {
-            "jestConfig": "packages/simple-agent-path-optimization/jest.config.js",
-            "passWithNoTests": true
+            "command": "npx vitest run",
+            "cwd": "packages/simple-agent-path-optimization"
           }
         }
       }
@@ -79,10 +79,10 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@nrwl/workspace:run-commands",
           "options": {
-            "jestConfig": "packages/calc-stats/jest.config.js",
-            "passWithNoTests": true
+            "command": "npx vitest run",
+            "cwd": "packages/calc-stats"
           }
         }
       }
@@ -100,10 +100,10 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@nrwl/workspace:run-commands",
           "options": {
-            "jestConfig": "packages/stack/jest.config.js",
-            "passWithNoTests": true
+            "command": "npx vitest run",
+            "cwd": "packages/stack"
           }
         }
       }
